@@ -278,6 +278,7 @@ def about_body():
     out += (f'<section class="section section-light"><div class="container">'
             + section_head("How we work", "What we hold ourselves to.", None, center=True)
             + feature_cards(principles, cols=4) + '</div></section>')
+    out += related(["why-proceaze/", "careers.html", "security.html"], "More about ProcEaze")
     return out
 
 

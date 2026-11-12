@@ -71,24 +71,28 @@ def footer():
     def col(title, items, d):
         lis = "".join(f'<li style="--i:{i}"><a href="{L(h)}">{t}</a></li>' for i, (h, t) in enumerate(items))
         return f'<div class="footer-col reveal" style="--d:{d}"><h3>{title}</h3><ul>{lis}</ul></div>'
-    points = ["Every category, one login", "Contract (ARC) prices locked at order",
-              "1–5 level approvals, full audit trail"]
-    # One column per section of the SEO site structure
-    software = [(k, n) for k, n, _, _ in SOFTWARE] + [("solutions.html", "Solutions by Role")]
-    services = [(k, n) for k, n, _, _ in SERVICES]
-    industries = [("industries.html", "All Industries")] + [(k, n) for k, n, _ in INDUSTRIES]
-    knowledge = [(k, n) for k, n, _, _ in KNOWLEDGE if k != "knowledge-hub/whitepapers-reports/"]
-    tools = [(k, n) for k, n, _, _ in TOOLS]
-    company = [(k, n) for k, n, _, _ in COMPANY] + [("how-it-works.html", "How It Works"), ("categories.html", "Categories")]
+    # Kept short on purpose: only the main pages. Every other page is linked
+    # from its hub (Software, Services, Industries, Knowledge Hub, Tools, Company)
+    software = [("platform.html", "B2B Procurement Platform"),
+                ("procurement-management-software/", "Procurement Management Software"),
+                ("e-procurement-software/", "E-Procurement Software"),
+                ("procure-to-pay-software/", "Procure-to-Pay Software")]
+    services = [("services/", "Procurement Services"),
+                ("services/end-to-end-procurement-services/", "End-to-End Procurement"),
+                ("services/arc-procurement-services/", "ARC-Based Procurement"),
+                ("industries.html", "Industries We Serve")]
+    resources = [("knowledge-hub/", "Knowledge Hub"), ("knowledge-hub/blog/", "Blog"),
+                 ("knowledge-hub/procurement-guides/", "Procurement Guides"), ("tools/", "Free Procurement Tools")]
+    company = [("about.html", "About Us"), ("why-proceaze/", "Why ProcEaze"),
+               ("contact.html", "Contact Us"), ("request-a-demo/", "Request a Demo")]
     legal = [("privacy.html", "Privacy"), ("terms.html", "Terms"), ("cookies.html", "Cookie Policy"), ("vendor-terms.html", "Vendor Terms")]
-    pts = "".join(f'<li style="--i:{i}">{icon("check")}{t}</li>' for i, t in enumerate(points))
     legal_links = "".join(f'<a href="{L(h)}">{t}</a>' for h, t in legal)
     return (
         f'<footer class="site-footer reveal"><div class="footer-net" aria-hidden="true"></div><div class="container">'
-        f'<div class="footer-main footer-main-wide"><div class="footer-brand reveal">{brand()}'
-        f'<ul class="footer-points">{pts}</ul></div>'
-        + col("Software", software, 1) + col("Services", services, 2) + col("Industries", industries, 3)
-        + col("Knowledge Hub", knowledge, 4) + col("Tools", tools, 5) + col("Company", company, 6) +
+        f'<div class="footer-main"><div class="footer-brand reveal">{brand()}'
+        f'<p>Procurement software for Indian enterprises: contracted catalogue buying, ARC pricing and approvals in one place.</p></div>'
+        + col("Software", software, 1) + col("Services", services, 2)
+        + col("Resources", resources, 3) + col("Company", company, 4) +
         f'</div><div class="footer-bottom reveal" style="--d:4"><span>&copy; 2026 ProcEaze. All rights reserved.</span>'
         f'<nav class="footer-legal" aria-label="Legal">{legal_links}</nav>'
         f'<a class="footer-signin" href="{APP_URL}" rel="nofollow">{icon("log-in")} Sign In</a></div>'

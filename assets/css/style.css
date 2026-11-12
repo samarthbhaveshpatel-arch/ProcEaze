@@ -2036,7 +2036,7 @@ html:not(.js) .how-num { background: var(--primary); color: #fff; }
 
 
 /* Compact footer: brand + key points, three short link columns */
-.footer-main { grid-template-columns: minmax(0, 1.6fr) repeat(3, minmax(0, 1fr)); padding: 48px 0 36px; }
+.footer-main { grid-template-columns: minmax(0, 1.6fr) repeat(4, minmax(0, 1fr)); padding: 48px 0 36px; }
 .footer-points { list-style: none; display: grid; gap: 8px; margin-top: 18px; }
 .footer-points li { display: flex; align-items: center; gap: 8px; font-size: .88rem; }
 .footer-points .icon { width: 16px; height: 16px; flex: none; color: var(--primary); }

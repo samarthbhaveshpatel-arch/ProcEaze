@@ -1,2 +1,7 @@
 __pycache__/
 *.pyc
+
+# Local working files: contact lists and planning docs, not part of the website
+/*.xlsx
+/*.pdf
+.claude/
