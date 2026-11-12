@@ -1,0 +1,6 @@
+Line No.,Item Code,Item Description,Specification / Make / Grade,Unit of Measure (UoM),HSN Code,GST Rate (%),Minimum Order Quantity (MOQ),Estimated Annual Quantity,Rate per UoM (INR excl. GST),Price Basis (e.g. FOR destination / Ex-works),Freight & Packing Included (Yes/No),Delivery Lead Time (days from PO),Delivery Location(s),Rate Valid From (DD-MM-YYYY),Rate Valid To (DD-MM-YYYY),Price Variation Clause (Fixed / Indexed / Reference),Warranty / Shelf Life,Remarks
+1,EXAMPLE-001,"EXAMPLE ROW - delete before use: Safety helmet, ratchet type","IS 2925, HDPE shell, white",Nos,,,50,1200,,FOR destination,Yes,7,"Plant 1, Plant 2",,,Fixed for contract period,,
+2,EXAMPLE-002,"EXAMPLE ROW - delete before use: Hex bolt M12 x 50","Grade 8.8, zinc plated, IS 1364",Box of 100,,,10,240,,FOR destination,Yes,10,Plant 1,,,Fixed for contract period,,
+3,,,,,,,,,,,,,,,,,,
+4,,,,,,,,,,,,,,,,,,
+5,,,,,,,,,,,,,,,,,,

@@ -1,0 +1,8 @@
+# robots.txt for www.proceaze.in (marketing site)
+# The application at app.proceaze.in is a separate host and must serve its own
+# robots.txt with 'Disallow: /' and an 'X-Robots-Tag: noindex' header.
+User-agent: *
+Allow: /
+Disallow: /_build/
+
+Sitemap: https://www.proceaze.in/sitemap.xml

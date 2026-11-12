@@ -1,0 +1,13 @@
+Criterion,Weight (%),What to assess,Supplier A score (1-5),Supplier B score (1-5),Supplier C score (1-5)
+Price / total cost,30,"Landed cost including freight, packing, taxes and payment terms",,,
+Quality,20,"Conformance to specification, rejection history, test certificates",,,
+Delivery reliability,15,"On-time delivery record, lead time, ability to handle urgent orders",,,
+Technical compliance,15,"Meets every mandatory specification; deviations listed and acceptable",,,
+Payment terms,5,"Credit period and conditions offered",,,
+Service & support,10,"Responsiveness, after-sales support, warranty handling",,,
+Compliance & documentation,5,"GSTIN, PAN, statutory registrations, authorisation letters, safety and quality certificates",,,
+Total weight (must equal 100),=SUM(B2:B8),,,,
+Weighted score (out of 5),,,"=SUMPRODUCT($B$2:$B$8,D2:D8)/100","=SUMPRODUCT($B$2:$B$8,E2:E8)/100","=SUMPRODUCT($B$2:$B$8,F2:F8)/100"
+,,,,,
+"How to use: edit the criteria and weights (weights must total 100), score each supplier from 1 (poor) to 5 (excellent) on each criterion, and compare the weighted scores. Add supplier columns by copying column F and updating the formula.",,,,,
+"Scoring guide: 1 = does not meet requirement, 2 = partly meets, 3 = meets, 4 = exceeds in some respects, 5 = clearly exceeds.",,,,,
