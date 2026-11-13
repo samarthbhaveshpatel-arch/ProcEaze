@@ -336,6 +336,7 @@ COMPANY = [
     ("contact.html", "Contact Us", "Get in touch with our team", "message-circle"),
     ("request-a-demo/", "Request a Demo", "A 30-minute walkthrough, configured for you", "calendar"),
     ("security.html", "Security & Trust", "Enterprise-grade control, by design", "shield-check"),
+    ("partners/", "Partners & Integrations", "Technology, ERP and supplier ecosystem", "network"),
     ("vendors.html", "Become a Vendor", "Supply through ProcEaze", "store"),
     ("careers.html", "Careers", "Work on procurement intelligence", "users"),
 ]

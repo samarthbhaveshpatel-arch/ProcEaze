@@ -33,7 +33,7 @@ def _link_item(i, href, label, section):
 NAV_LINKS = [
     ("index.html", "Home", "home"), ("platform.html", "Software", "platform"),
     ("services/", "Services", "services"), ("industries.html", "Industries", "industries"),
-    ("knowledge-hub/", "Knowledge Hub", "knowledge"), ("tools/", "Tools", "tools"),
+    ("categories.html", "Categories", "categories"), ("partners/", "Partners", "partners"),
     ("about.html", "Company", "company"),
 ]
 
@@ -81,10 +81,13 @@ def footer():
                 ("services/end-to-end-procurement-services/", "End-to-End Procurement"),
                 ("services/arc-procurement-services/", "ARC-Based Procurement"),
                 ("industries.html", "Industries We Serve")]
+    # Knowledge Hub and Tools live here rather than in the top navigation
     resources = [("knowledge-hub/", "Knowledge Hub"), ("knowledge-hub/blog/", "Blog"),
-                 ("knowledge-hub/procurement-guides/", "Procurement Guides"), ("tools/", "Free Procurement Tools")]
+                 ("knowledge-hub/procurement-guides/", "Procurement Guides"), ("faq.html", "FAQs"),
+                 ("tools/", "Procurement Tools"), ("tools/procurement-savings-calculator/", "Savings Calculator"),
+                 ("tools/rfq-template-generator/", "RFQ Template Generator")]
     company = [("about.html", "About Us"), ("why-proceaze/", "Why ProcEaze"),
-               ("contact.html", "Contact Us"), ("request-a-demo/", "Request a Demo")]
+               ("partners/", "Partners & Integrations"), ("contact.html", "Contact Us"), ("request-a-demo/", "Request a Demo")]
     legal = [("privacy.html", "Privacy"), ("terms.html", "Terms"), ("cookies.html", "Cookie Policy"), ("vendor-terms.html", "Vendor Terms")]
     legal_links = "".join(f'<a href="{L(h)}">{t}</a>' for h, t in legal)
     return (

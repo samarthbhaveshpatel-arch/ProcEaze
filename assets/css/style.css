@@ -2281,3 +2281,7 @@ html:not(.js) [data-js-only] { display: none !important; }
   .tool-dl-inline .btn { width: 100%; }
   .tool-compare tbody th { width: auto; }
 }
+
+/* Partners page: ecosystem diagrams on royal blue instead of navy */
+.dark-panel.panel-royal { background: radial-gradient(420px 280px at 100% 0, rgba(255, 255, 255, .14), transparent 60%), #1541B2; }
+.dark-panel.panel-royal .hub-lines path { stroke: rgba(255, 255, 255, .55); }

@@ -98,7 +98,7 @@ def how_body():
 
     paths = [
         ("clipboard-list", "Through RFQ", None, "Raise an RFQ to your vendors, compare quotes side by side and choose the best offer."),
-        ("gavel", "Through reverse auction", "coming", "Run a live auction with L1/L2/L3 ranking, reserve price and anti-sniping."),
+        ("gavel", "Through reverse auction", None, "Run a live auction with L1/L2/L3 ranking, reserve price and anti-sniping."),
         ("store", "ProcEaze as vendor", None, "Choose ProcEaze as the vendor. The requisition goes straight to purchase approval and ProcEaze handles sourcing, pricing and fulfilment."),
     ]
     cards = "".join(f'<article class="card card-hover feature-card reveal" style="--d:{i}"><div class="card-head">{icon_tile(ic)}{badge(st)}</div>'

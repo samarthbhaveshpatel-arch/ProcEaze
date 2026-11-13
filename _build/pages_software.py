@@ -268,11 +268,11 @@ def ep_body():
         cls="section section-light", reverse=True,
         after=('<div class="mt-48">' + feature_cards([
             dict(icon="gavel", title="Reverse auctions", text="Live bidding with L1 / L2 / L3 ranking, reserve price and anti-sniping.",
-                 status="coming", href="reverse-auction.html", cta="Try the simulation"),
+                 href="reverse-auction.html", cta="Try the simulation"),
             dict(icon="bot", title="AI Price Negotiator", text="An AI agent negotiates over chat or voice against your target price. The buyer decides.",
                  status="early", href="ai-negotiator.html", cta="AI Price Negotiator"),
             dict(icon="store", title="Vendor Portal", text="Vendors receive matched RFQs, join auctions and track awarded POs.",
-                 status="coming", href="vendor-portal.html", cta="Vendor Portal"),
+                 href="vendor-portal.html", cta="Vendor Portal"),
         ]) + '</div>'
             + _notice("<strong>Live today:</strong> NFAs route through the same approval hierarchy as requisitions, and purchase orders are "
                       "issued once they are approved. RFQs run through the Sourcing Desk, with reverse auctions and the Vendor Portal, and the "

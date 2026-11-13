@@ -23,7 +23,7 @@ from lib import CTX, BASE_URL, ROUTES, route, esc
 from chrome import page  # noqa: E402
 
 MODULES = ["pages_home", "pages_platform", "pages_software", "pages_services", "pages_solutions",
-           "pages_company", "pages_knowledge", "pages_tools", "pages_misc"]
+           "pages_company", "pages_partners", "pages_knowledge", "pages_tools", "pages_misc"]
 
 # Top-level folders that hold generated pages; anything else in OUT is source or assets
 KEEP_DIRS = {"_build", "assets", "photos", ".vscode", ".claude", ".git"}
